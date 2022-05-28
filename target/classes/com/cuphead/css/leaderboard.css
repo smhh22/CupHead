@@ -1,0 +1,71 @@
+BorderPane {
+    -fx-background: white;
+    -fx-padding: 100 100 10 100;
+}
+
+VBox {
+    -fx-max-width: 1000;
+    -fx-spacing: 10;
+    -fx-alignment: center;
+}
+
+Label {
+    -fx-text-alignment: left;
+    -fx-alignment: center;
+    -fx-wrap-text: true;
+    -fx-pref-height: 40;
+    -fx-min-width: 40;
+}
+
+Button {
+    -fx-pref-width: 250;
+    -fx-pref-height: 50;
+    -fx-text-fill: white;
+    -fx-background-color: #0522dd;
+    -fx-cursor: hand;
+}
+
+Button:hover {
+    -fx-effect: dropshadow(gaussian, black, 10, 0, 0, 0);
+}
+
+.index {
+    -fx-pref-width: 40;
+}
+
+.username {
+    -fx-pref-width: 800;
+}
+
+.score {
+    -fx-pref-width: 210;
+}
+
+.gold {
+    -fx-text-fill: blue;
+    -fx-background-color: gold;
+}
+
+.silver {
+    -fx-text-fill: yellow;
+    -fx-background-color: silver;
+}
+
+.bronze {
+    -fx-text-fill: white;
+    -fx-background-color: brown;
+}
+
+.odd {
+    -fx-text-fill: black;
+    -fx-background-color: white;
+}
+
+.even {
+    -fx-text-fill: black;
+    -fx-background-color: gray;
+}
+
+#title {
+    -fx-font-size: 50;
+}

@@ -1,0 +1,43 @@
+BorderPane {
+    -fx-background: white;
+    -fx-padding: 30 200 50 200;
+}
+
+VBox {
+    -fx-max-width: 250;
+    -fx-spacing: 10;
+    -fx-alignment: center-left;
+}
+
+Label {
+    -fx-text-alignment: left;
+    -fx-alignment: center-left;
+    -fx-wrap-text: true;
+}
+
+TextField, PasswordField {
+    -fx-pref-width: 250;
+    -fx-pref-height: 30;
+}
+
+Button {
+    -fx-pref-width: 250;
+    -fx-pref-height: 50;
+    -fx-text-fill: white;
+    -fx-background-color: #0522dd;
+    -fx-cursor: hand;
+}
+
+Button:hover {
+    -fx-effect: dropshadow(gaussian, black, 10, 0, 0, 0);
+}
+
+#title {
+    -fx-font-size: 50;
+}
+
+#back {
+    -fx-text-fill: blue;
+    -fx-background-color: white;
+    -fx-border-color: blue;
+}

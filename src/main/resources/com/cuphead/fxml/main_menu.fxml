@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.geometry.Insets?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.cuphead.View.MainMenuController"
+            prefHeight="720" prefWidth="1280"
+            stylesheets="@../css/main_menu.css">
+
+    <center>
+        <VBox>
+            <Button text="Start New Game" onMouseClicked="#startNewGame"/>
+            <Button text="Settings" onMouseClicked="#showSettings"/>
+            <Button fx:id="profileButton" text="Profile" disable="true" onMouseClicked="#showProfile"/>
+            <Button text="Leaderboard" onMouseClicked="#showLeaderboard"/>
+            <Button text="Exit Game" onMouseClicked="#exitGame"/>
+        </VBox>
+    </center>
+
+</BorderPane>

@@ -1,0 +1,27 @@
+Control {
+    -fx-focus-traversable: false;
+}
+
+Button {
+    -fx-pref-width: 250;
+    -fx-pref-height: 50;
+    -fx-text-fill: white;
+    -fx-background-color: #0522dd;
+    -fx-cursor: hand;
+}
+
+Button:hover {
+    -fx-effect: dropshadow(gaussian, black, 10, 0, 0, 0);
+}
+
+#back {
+    -fx-text-fill: blue;
+    -fx-background-color: white;
+    -fx-border-color: blue;
+}
+
+#exit {
+    -fx-text-fill: red;
+    -fx-background-color: white;
+    -fx-border-color: red;
+}

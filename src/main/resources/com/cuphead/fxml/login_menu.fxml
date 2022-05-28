@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.geometry.Insets?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.cuphead.View.LoginMenuController"
+            prefHeight="720" prefWidth="1280"
+            stylesheets="@../css/login_menu.css">
+    <top>
+        <Text id="title" BorderPane.alignment="CENTER" text="CupHead" styleClass="title"/>
+    </top>
+    <right>
+        <VBox alignment="CENTER">
+<!--            <Text text="Register" styleClass="title"/>-->
+            <Label fx:id="registerLabel" id="message"/>
+            <Label text="Username:"/>
+            <TextField fx:id="registerUsername" promptText="username" onKeyTyped="#checkRegisterUsername" onKeyPressed="#checkRegisterEnter"/>
+            <Label text="Password:"/>
+            <PasswordField fx:id="registerPassword" promptText="password" onKeyTyped="#checkRegisterPassword" onKeyPressed="#checkRegisterEnter"/>
+            <Label text="Repeat Password:"/>
+            <PasswordField fx:id="registerRepeatPassword" promptText="password" onKeyTyped="#checkRepeatPassword" onKeyPressed="#checkRegisterEnter"/>
+            <Button fx:id="registerButton" text="Register" onMouseClicked="#register" onKeyPressed="#checkRegisterEnter"/>
+        </VBox>
+    </right>
+    <left>
+        <VBox alignment="CENTER">
+<!--            <Text text="login" styleClass="title"/>-->
+            <Label fx:id="loginLabel"/>
+            <Label text="Username:"/>
+            <TextField fx:id="loginUsername" promptText="username" onKeyTyped="#checkLoginUsername"/>
+            <Label text="Password:"/>
+            <PasswordField fx:id="loginPassword" promptText="password" onKeyTyped="#checkLoginPassword"/>
+            <Button text="Login" onMouseClicked="#login"/>
+        </VBox>
+    </left>
+    <bottom>
+        <Button BorderPane.alignment="CENTER" alignment="CENTER" text="Enter as guest" onMouseClicked="#enterAsGuest"/>
+    </bottom>
+
+</BorderPane>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.geometry.Insets?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.cuphead.View.LeaderboardController"
+            prefHeight="720" prefWidth="1280"
+            stylesheets="@../css/leaderboard.css">
+
+    <center>
+        <GridPane fx:id="table">
+        </GridPane>
+    </center>
+    <bottom>
+        <VBox><Button id="back" text="Back to Main Menu" onMouseClicked="#back"/></VBox>
+    </bottom>
+
+</BorderPane>
